@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SelectDropDownComponent } from './select-drop-down/select-drop-down.component';
+import { SearchBoxComponent } from './search-box/search-box.component';
 
 
 
 @NgModule({
   declarations: [
-    SelectDropDownComponent
+    SelectDropDownComponent,
+    SearchBoxComponent
   ],
   exports:[
-    SelectDropDownComponent
+    SelectDropDownComponent,
+    SearchBoxComponent
   ],
   imports: [
     CommonModule
