@@ -6,11 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-box.component.css']
 })
 export class SearchBoxComponent implements OnInit {
+  // The properties
+  searchCriteria: string = ''; // Comes from the search input field
 
   constructor() {
-   }
+  }
 
   ngOnInit(): void {
+  }
+
+  /**
+   * The search method called when the user clicks on the Search button.
+   */
+  search() {
+    console.log(`User is searching for: ${this.searchCriteria}`);
   }
 
 }
