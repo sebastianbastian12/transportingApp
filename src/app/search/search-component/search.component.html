@@ -1,0 +1,17 @@
+<div class="search-component-div">
+  <select name="search-select" id="search-select" (change)="selectChangeHandler($event)">
+      <option value="select">Select</option>
+      <option value="load-number">Load Number</option>
+      <option value="shipper-name">Shipper Name</option>
+      <option value="receiver-name">Receiver Name &#x276F;</option> <!-- This will result in another dropdown-->
+      <option value="reference-number">Reference Number</option>
+      <option value="whole-data-loads">Whole Data Loads</option>
+  </select>
+    
+  <!-- Search box taken from: https://mdbootstrap.com/docs/standard/forms/search/ -->
+  <div class="input-group">
+      <input type="search" id ="search-criteria" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" [(ngModel)]="searchCriteria"/>
+      <button (click)="search()" type="button" class="btn btn-outline-primary" id="search-button">search</button>
+  </div>
+</div>
+
