@@ -1,8 +1,10 @@
 .input-group {
-    width: 500px; /* Style the width of the search bar */
+    width: 250px; /* Style the width of the search bar */
 }
 
 .search-component-div {
     display: flex;
     gap: 12px;
 }
+
+

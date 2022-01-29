@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SheetsComponent } from './sheets/sheets.component';
-
+import { LoadInformationComponent } from './components/load-information/load-information.component';
+import { ShipperInformationComponent } from './components/shipper-information/shipper-information.component';
+import { ReceiverInformationComponent } from './components/receiver-information/receiver-information.component';
+import { CarrierInformationComponent } from './components/carrier-information/carrier-information.component';
 
 
 
 @NgModule({
   declarations: [
-    SheetsComponent
+    LoadInformationComponent,
+    ShipperInformationComponent,
+    ReceiverInformationComponent,
+    CarrierInformationComponent
   ],
   exports:[
-    SheetsComponent
+    LoadInformationComponent,
+    ShipperInformationComponent,
+    ReceiverInformationComponent,
+    CarrierInformationComponent
   ],
   imports: [
     CommonModule
