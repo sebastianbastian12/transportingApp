@@ -13,7 +13,18 @@ export class SearchComponent implements OnInit {
   constructor() {
   }
 
+  /**
+   * Called after the component has been completely initialized
+   */
   ngOnInit(): void {
+    console.log("Component has been initialized");
+    let selectMenu = document.getElementById("search-select");
+    selectMenu?.addEventListener('change', (event) => {
+      console.log(this.selectedCriteria);
+      if (this.selectedCriteria == 'receiver-name') {
+        console.log("User selected receiver name");
+      }
+    });
   }
 
   /**

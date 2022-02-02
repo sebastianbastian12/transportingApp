@@ -6,3 +6,26 @@
     display: flex;
     gap: 12px;
 }
+
+option:hover {
+   background-color: yellow;
+}
+
+.dropdown-button {
+    display: flex;
+    justify-content: space-between;
+    border: .5px solid #cdd5da;
+    border-radius: 3%;
+    padding: .5em;
+    width: 170px;
+    transition: all .2s;
+    color: #0d6dfd;
+    font-family: "Helvetica Neue";
+}
+
+.dropdown-button:hover {
+    cursor: pointer;
+    background-color:#0d6dfd;
+    color: white;
+
+}
