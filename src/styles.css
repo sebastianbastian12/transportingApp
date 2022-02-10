@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-.container-fluid{
-  padding: 5px;
 
+.container-fluid {
+    padding: 5px;
+}
+
+
+/*Start code added by Sebastian*/
+
+#searchHistory {
+    height: 58%;
+    min-width: 180px;
+}
+
+.list-group-item {
+    max-width: 80%;
+    margin: 2px auto;
+    cursor: pointer;
 }

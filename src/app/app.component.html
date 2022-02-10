@@ -1,19 +1,26 @@
 <header class="bg-dark" style="padding: 1.8rem">
-  <div class="row">
-  <div class="col-6">
-    <app-search></app-search>
-  </div>
-  <div class="col-6">
-    <h1 class="text-warning">Transporting Load App</h1>
-  </div>
-  </div>
+    <div class="row">
+        <div class="col-6">
+            <app-search></app-search>
+        </div>
+        <div class="col-6">
+            <h1 class="text-warning">Transporting Load App</h1>
+        </div>
+    </div>
 </header>
-<div class="col">
-<div class="load-info float-end">
-<app-load-information></app-load-information>
-<app-shipper-information></app-shipper-information>
-<app-receiver-information></app-receiver-information>
-<app-carrier-information></app-carrier-information>
+<div>
+    <div class="row">
+        <div class="search-app col-2">
+            <app-search-history></app-search-history>
+        </div>
+        <div class="col-5">
+            <h2 class="text-center">Whole Data Information</h2>
+        </div>
+        <div class="load-info float-end col-5">
+            <app-load-information></app-load-information>
+            <app-shipper-information></app-shipper-information>
+            <app-receiver-information></app-receiver-information>
+            <app-carrier-information></app-carrier-information>
+        </div>
+    </div>
 </div>
- </div>
-
